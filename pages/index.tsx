@@ -16,7 +16,7 @@ export default function Home() {
             ...conversations,
         ])
         e.target.reset()
-        const response = await fetch("https://samiulbasirfahim.github.io/chat-bot/api/openAi", {
+        const response = await fetch("https://chat-bot-samiulbasirfahim.vercel.app/api/openAi", {
             headers: {
                 "Content-Type": "application/json",
             },
