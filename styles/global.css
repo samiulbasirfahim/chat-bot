@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: Operator-mono;
+    src: url(../public/OperatorMonoLig-MediumItalic.otf);
+}
+
+* {
+    font-family: Operator-mono !important;
+}
