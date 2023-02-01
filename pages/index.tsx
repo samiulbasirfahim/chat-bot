@@ -16,7 +16,7 @@ export default function Home() {
             ...conversations,
         ])
         e.target.reset()
-        const response = await fetch("http://localhost:3000/api/openAi", {
+        const response = await fetch("https://samiulbasirfahim.github.io/chat-bot/api/openAi", {
             headers: {
                 "Content-Type": "application/json",
             },
