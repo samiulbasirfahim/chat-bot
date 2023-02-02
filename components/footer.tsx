@@ -8,9 +8,13 @@ export default function Footer() {
         Powered by openAI
       </Text>
       <Text textAlign="center" color="blue.500">
-       Created by
+        Created by
         <Text ps="2" textDecor="underline" as="span">
-          <a target="_blank" href="https://github.com/samiulbasirfahim">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/samiulbasirfahim"
+          >
             Samiul Basir Fahim
           </a>
         </Text>
