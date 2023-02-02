@@ -23,16 +23,19 @@ export default function Chat() {
     const command: string = e.target.command.value as string
     setConversations([{ name: "me", text: command }, ...conversations])
     e.target.reset()
-    const response_first = await fetch("https://openbot.vercel.app/openAi", {
-      headers: {
-        "Content-Type": "application/json",
-      },
-      method: "POST",
-      body: JSON.stringify({
-        type: "chat",
-        command,
-      }),
-    })
+    const response_first = await fetch(
+      "https://openbot.vercel.app/api/openAi",
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+        body: JSON.stringify({
+          type: "chat",
+          command,
+        }),
+      }
+    )
     const { response } = await response_first.json()
     setDisableInput(false)
     const newConversations = [
